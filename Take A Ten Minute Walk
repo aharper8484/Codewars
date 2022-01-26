@@ -1,0 +1,8 @@
+function isValidWalk(walk) {
+      const n = walk.filter(item => {return item === "n"}).length;
+      const s = walk.filter(item => {return item === "s"}).length;
+      const e = walk.filter(item => {return item === "e"}).length;
+      const w = walk.filter(item => {return item === "w"}).length;
+      
+      return walk.length === 10 && n === s && e === w;
+}
